@@ -1,0 +1,15 @@
+# 192.168.51.55
+0 7,13,19,1 * * * /usr/bin/python /u01/app/oracle/backups/scripts/pool.bin -o h >>/mnt/bcks/rman/logs/55_`date +\%Y\%m\%d\%H\%M`.hog
+0 22 * * * /usr/bin/python /u01/app/oracle/backups/scripts/pool.bin -o d >>/mnt/bcks/rman/logs/55_`date +\%Y\%m\%d\%H\%M`.dog
+
+# 192.168.51.56
+0 7 * * * /usr/bin/python /u01/app/oracle/backups/scripts/pool.bin -o d >>/mnt/bcks/rman/logs/56_`date +\%Y\%m\%d\%H\%M`.dog
+
+# 192.168.51.59
+0 7,13,19,1 * * * /usr/bin/python /u01/app/oracle/backups/scripts/pool.bin -o h >>/mnt/bcks/rman/logs/59_`date +\%Y\%m\%d\%H\%M`.hog
+0 22 * * * /usr/bin/python /u01/app/oracle/backups/scripts/pool.bin -o d >>/mnt/bcks/rman/logs/59_`date +\%Y\%m\%d\%H\%M`.dog
+0 0 * * 0 /usr/bin/python /u01/app/oracle/backups/scripts/pool.bin -o w >>/mnt/bcks/rman/logs/59_`date +\%Y\%m\%d\%H\%M`.wog
+0 0 1 * * /usr/bin/python /u01/app/oracle/backups/scripts/pool.bin -o m >>/mnt/bcks/rman/logs/59_`date +\%Y\%m\%d\%H\%M`.mog
+
+
+
