@@ -1,8 +1,9 @@
 #!/bin/bash
-dateformat=$(date +%d%m%Y_%H%M%S)
 
 date
 c_begin_time_sec=`date +%s`
+
+dateformat=$(date +%d%m%Y_%H%M%S)
 
 su -c "
 . /home/oracle/.db_profile
